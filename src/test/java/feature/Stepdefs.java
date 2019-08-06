@@ -47,8 +47,4 @@ public class Stepdefs {
 		assertEquals(string,driver.getTitle());
 		driver.close();
 	}
-	
-	
-	
-
 }
