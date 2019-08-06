@@ -12,7 +12,6 @@ archetype version = 4.2.6.1
 
 3/ Add a feature file and corresponding step def
 
-4/ run maven test
+4/ run maven install (should execute the test inParallel)
 
 5/ verify the report in target/cucumber-reports.
-
