@@ -15,8 +15,10 @@ public class Stepdefs {
 	
 	private WebDriver driver;
 	
-	@Given("user is displayed with amazon home page")
-	public void user_is_displayed_with_amazon_home_page() {
+	@Given("user is displayed with amazon home page {string} {string}")
+	public void user_is_displayed_with_amazon_home_page(String scenario, String file) {
+		System.out.format("Thread ID - %2d - %s from %s feature file.\n",
+		        Thread.currentThread().getId(), scenario,file);
 		System.setProperty("webdriver.chrome.driver", "C:\\temp\\chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("start-maximized");
@@ -39,5 +41,14 @@ public class Stepdefs {
 		assertTrue(driver.getCurrentUrl().contains(string));
 		driver.close();
 	}
+	
+	@Then("page title {string} should be displayed")
+	public void verify_page_title(String string){
+		assertEquals(string,driver.getTitle());
+		driver.close();
+	}
+	
+	
+	
 
 }
