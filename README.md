@@ -1,6 +1,6 @@
 # cucumberjavademo
 
-This project will help you to star using cucumber,selenium - java with maven
+This project will help you to start using cucumber,selenium - java with maven
 
 1/ Create a maven project using your fav. IDE (e.g eclipse)
 
