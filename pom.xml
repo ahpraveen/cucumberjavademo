@@ -6,8 +6,7 @@
 	<groupId>cucumberseleniumjavademo</groupId>
 	<artifactId>cucumberseleniumjavademo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
+	
 	<properties>
 		<cucumber.version>4.2.6</cucumber.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
